@@ -1,17 +1,8 @@
-package main
+package gitrepo
 
 import (
-	"fmt"
 	"os/exec"
 )
-
-func main() {
-	branch, err := currentBranch()
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(branch)
-}
 
 type GitRepo struct {
 	branch string
